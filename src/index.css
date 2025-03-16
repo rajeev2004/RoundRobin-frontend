@@ -1,0 +1,134 @@
+.userDashboard{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.form{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  animation: tween 0.5s ease-in-out;
+}
+input{
+  border: 1px solid black;
+}
+button{
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #0056D2;
+  border: none;
+  color: white;
+}
+input:focus{
+  border: 2px blue solid;
+  outline: none;
+}
+select:focus{
+  border: 2px blue solid;
+  outline: none;
+}
+button:hover{
+  transform: scale(1.1);
+  background-color: #004bb5;
+}
+p{
+  margin: 0;
+  font-size: 18px;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+@keyframes tween{
+  from{
+      opacity: 0;
+      transform: translateY(+20px);
+  }
+  to{
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.formComponents{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.formComponents label{
+  width: 80px;
+  text-align: right;
+}
+.formComponents input{
+  flex: 1;
+}
+.formComponents div{
+  flex: 1;
+}
+h2:hover{
+  text-decoration: underline;
+}
+.name{
+  width: 100%;
+  text-align: center;
+  background-color: yellow;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.buttonClass{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+input,button,select{
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.next-coupon{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+.adminPanel{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.addCoupon{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; 
+}
+.allCoupons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+.individualCoupon{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 5px;
+  flex-wrap: wrap;
+  flex: 1 1 150px;
+}
+li{
+  padding: 5px 5px;
+}
