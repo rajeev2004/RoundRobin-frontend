@@ -48,7 +48,7 @@ function AdminPanel(){
         }
         try{
             const response=await axios.post(`${backend}/addCoupon`,{code:newCouponCode},{withCredentials:true});
-            setCoupons([...coupons,response.data.newCoupon]);
+            setCoupons([response.data.newCoupon,...coupons]);
             setNewCouponCode('');
             alert('coupon added');
         }catch(err){
