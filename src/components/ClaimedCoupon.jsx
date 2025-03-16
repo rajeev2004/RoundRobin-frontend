@@ -29,7 +29,7 @@ function ClaimedCoupon(){
             <div className="name">
                 <h2>Claimed Coupons</h2>
             </div>
-            {error && <p className="error">{error}</p>}
+            {error && <p className="message">{error}</p>}
             {!loading && !error && claimedCoupons.length === 0 && <p>No claimed coupons yet.</p>}
             {!loading && claimedCoupons.length > 0 && (
                 <ul>

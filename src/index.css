@@ -132,3 +132,7 @@ input,button,select{
 li{
   padding: 5px 5px;
 }
+.message{
+  color: red;
+  text-align: center;
+}
